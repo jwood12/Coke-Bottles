@@ -1,0 +1,33 @@
+#To create an Alternate Data Stream (ADS) on a file located on your desktop using the Windows Command Prompt, follow these instructions:
+#Open a Command Prompt window:
+
+#Press Win + R, type "cmd," and press Enter.
+#Alternatively, you can search for "Command Prompt" in the Start menu and open it.
+
+#Navigate to your desktop directory:
+
+cd %userprofile%\Desktop
+
+#To create a text file named "readme.txt" with the content "I am a harmless file," use the following command:
+
+echo I am a harmless file > readme.txt
+
+#To create an Alternate Data Stream (ADS) with secret content, use the following command:
+
+echo this is my list of secret evil stuff > readme.txt:secret.txt
+
+#This command will create an alternate data stream named "secret.txt" inside the "readme.txt" file on your desktop with the specified content.
+#To confirm that the original file "readme.txt" still contains its original content, open it with Notepad:
+
+notepad readme.txt
+
+#To access the secret message within the alternate data stream, open the file with the ADS name:
+
+notepad readme.txt:secret.txt
+
+#This will open the "secret.txt" alternate data stream and display the message "this is my list of secret evil stuff."
+
+#Again, please use this technique responsibly and in accordance with the law, and be aware that some security software or configurations might detect and block the use of alternate data streams.
+
+#For educational or private use (within the bounds of any and all local, state, federal, and international laws.
+
